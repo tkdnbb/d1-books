@@ -1,0 +1,24 @@
+{
+  "name": "d1-books",
+  "scripts": {
+    "dev": "wrangler dev",
+    "dev:remote": "wrangler dev --remote",
+    "deploy": "wrangler deploy --minify",
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv ./cloudflare-env.d.ts",
+    "drizzle:studio": "drizzle-kit studio",
+    "drizzle:generate": "drizzle-kit generate"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.7",
+    "drizzle-orm": "^0.44.2",
+    "hono": "^4.6.17"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250620.0",
+    "@types/bun": "^1.1.18",
+    "better-sqlite3": "^12.1.1",
+    "bun-types": "^1.1.45",
+    "drizzle-kit": "^0.31.2",
+    "wrangler": "^4.22.0"
+  }
+}

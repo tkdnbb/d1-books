@@ -1,0 +1,30 @@
+name = "d1-books"
+main = "src/index.ts"
+compatibility_date = "2025-01-22"
+
+compatibility_flags = [ "nodejs_compat" ]
+
+[vars]
+CLOUDFLARE_ACCOUNT_ID = "9894264f69cee8b4c74e99441299f17a"
+CLOUDFLARE_DATABASE_ID = "633eea05-8150-40d4-9d22-30d8b81dd7a7"
+
+# [[kv_namespaces]]
+# binding = "MY_KV_NAMESPACE"
+# id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+# [[r2_buckets]]
+# binding = "MY_BUCKET"
+# bucket_name = "my-bucket"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "book-of-ben"
+database_id = "633eea05-8150-40d4-9d22-30d8b81dd7a7"
+migrations_dir = "drizzle/migrations"
+
+# [ai]
+# binding = "AI"
+
+# [observability]
+# enabled = true
+# head_sampling_rate = 1
